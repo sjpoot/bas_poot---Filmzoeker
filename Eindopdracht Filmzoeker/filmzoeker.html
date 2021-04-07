@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="./movies.js"></script>
+    <script defer type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Filmzoeker</title>
+</head>
+
+<body>
+    <div class="movie-search">
+
+        <header class="movie-search__menu">
+            <h2>Welkom bij de Winc Filmzoeker</h2>
+        </header>
+
+        <nav class="movie-search__filter-menu" id="movie-filter-menu">
+            <div>
+                <input type="radio" id="movie-latest" name="movie-filter" value="movie-latest">
+                <label for="movie-latest">Nieuwste Films</label>
+            </div>
+            <div>
+                <input type="radio" id="movie-avengers" name="movie-filter" value="movie-avengers">
+                <label for="movie-avengers">Avengers</label>
+            </div>
+            <div>
+                <input type="radio" id="movie-x-men" name="movie-filter" value="movie-x-men">
+                <label for="movie-x-men">X-Men</label>
+            </div>
+            <div>
+                <input type="radio" id="movie-princess" name="movie-filter" value="movie-princess">
+                <label for="movie-princess">Princess</label>
+            </div>
+            <div>
+                <input type="radio" id="movie-batman" name="movie-filter" value="movie-batman">
+                <label for="movie-batman">Batman</label>
+            </div>
+            <div>
+                <input type="radio" id="movie-reset" name="movie-filter" value="movie-reset">
+                <label for="movie-reset">Reset</label>
+            </div>
+        </nav>
+        <nav class="movie-search__filter-open">
+            <form onsubmit="return false;">
+                <input type="text" class="movie-search__filter-open--text" name="movie-filter" id="movie-open" placeholder="Vul hier een zoekterm in">
+                <label for="movie-open"></label>
+            </form>
+        </nav>
+
+        <main class="movie-search__container" id="movie-container">
+            <ul id="movie-list-container">
+
+
+            </ul>
+        </main>
+
+        <footer class="movie-search__credits">
+            Copyright 2021 Bas Poot
+        </footer>
+    </div>
+</body>
+
+</html>
